@@ -114,6 +114,12 @@ export default {
               component: './Welcome',
             },
             {
+              path: '/demo',
+              name: 'demo',
+              icon: 'smile',
+              component: './Demo',
+            },
+            {
               name: 'editor',
               icon: 'highlight',
               path: '/editor',
