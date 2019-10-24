@@ -2,11 +2,11 @@ import React from 'react';
 import { Button } from 'antd';
 import { withPropsAPI } from 'gg-editor';
 
-class Save extends React.Component {
+class SaveButton extends React.Component {
   handleClick = () => {
     const { propsAPI } = this.props;
-    const koniData = propsAPI.save();
-    console.log('koniData', JSON.stringify(koniData));
+    propsAPI.save();
+    console.log(propsAPI.save());
   };
 
   render() {
@@ -19,4 +19,4 @@ class Save extends React.Component {
   }
 }
 
-export default withPropsAPI(Save);
+export default withPropsAPI(SaveButton);
